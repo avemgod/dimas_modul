@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contoh Tipe Data Boolean</title>
+</head>
+<body>
+
+<h2>Contoh Tipe Data Boolean</h2>
+<p id="output"></p>
+
+<script>
+// Langsung memberikan nilai boolean
+let isLogin = true;
+let isAdmin = false;
+
+// Boolean dari hasil perbandingan
+let a = 10;
+let b = 20;
+let perbandingan = a < b;  // true
+
+// Struktur logika menggunakan boolean
+let status = "";
+if (isLogin) {
+  status = "Pengguna sudah login.";
+} else {
+  status = "Pengguna belum login.";
+}
+
+// Menampilkan hasil
+document.getElementById("output").innerHTML =
+  "Nilai isLogin: " + isLogin + "<br>" +
+  "Nilai isAdmin: " + isAdmin + "<br>" +
+  "Apakah a < b? " + perbandingan + "<br>" +
+  status;
+</script>
+
+</body>
+</html>
